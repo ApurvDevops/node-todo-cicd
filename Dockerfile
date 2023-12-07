@@ -1,7 +1,6 @@
-FROM node:12.2.0-alpine
-WORKDIR app
+FROM node:14-alpine
+RUN apk add --no-cache python3 g++ make
+WORKDIR /app
 COPY . .
-RUN npm install
-RUN npm run test
-EXPOSE 8000
-CMD ["node","app.js"]
+RUN yarn install --production
+CMD ["node", "app.js"]
