@@ -1,4 +1,4 @@
-# This is just a sample application forked from Shubham Londe repo, for Docker demo
+# This is just a sample application forked from Shubham  repo, for Docker demo
 
 Run these commands:
 
